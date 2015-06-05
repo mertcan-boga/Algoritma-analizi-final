@@ -1,26 +1,24 @@
-import java.util.Scanner;
-import java.util.Random; 
 import java.util.*;
 import java.lang.reflect.Array;
-
+import java.util.Random;
 
 public class soru8 {
 
-	{
 	     
-	        public static void main (String[] args){
-	            int indis;
+		public static void main(String[] args) {
+				int indis;
 	            Array[] dizi = new Array [1];
 	            Scanner tara=new Scanner(System.in);
 	            System.out.println("Dizinizin eleman sayısını girin:");
 	            indis = tara.nextInt();
 	          
-	            dizi = Arrays.copyOf(dizi, dizi.length() + 1);
-	            Random rastgele = new Random();
+	            dizi = Arrays.copyOf(dizi, dizi.length + 1);
+	           
 
 	            for (int i = 0; i < indis; i++)
-	            {
-	                dizi[i] = rastgele.nextInt(100);
+	            { 	
+	            	Random rastgele = new Random();
+	                dizi[i] = rastgele;
 	            
 	            }
 	            
